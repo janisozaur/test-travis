@@ -2,6 +2,7 @@ sudo: false
 cache:
     directories:
         - $HOME/sdl2install
+    apt: true
 addons:
     apt:
         packages:
