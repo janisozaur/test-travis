@@ -6,6 +6,7 @@ addons:
     apt:
         packages:
             - cmake
+            - libpng12-dev
 install:
     - cd ~
     - mkdir sdl2install || true
