@@ -2,6 +2,10 @@ sudo: false
 cache:
     directories:
         - $HOME/sdl2install
+addons:
+    apt:
+        packages:
+            - cmake
 install:
     - cd ~
     - mkdir sdl2install || true
