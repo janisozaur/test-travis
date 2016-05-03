@@ -8,16 +8,19 @@ addons:
         packages:
             - cmake
             - libpng12-dev:i386
+            - libspeexdsp-dev:i386
+            - libfreetype6-dev:i386
+            - libcurl4-openssl-dev:i386
 install:
-    - cd ~
-    - mkdir sdl2install || true
-    - export SDL2DIR="$(pwd)/sdl2install"
+    #- cd ~
+    #- mkdir sdl2install || true
+    #- export SDL2DIR="$(pwd)/sdl2install"
 
-    - wget https://www.libsdl.org/release/SDL2-2.0.4.tar.gz
-    - tar xzf SDL2-2.0.4.tar.gz
-    - cd SDL2-2.0.4
-    - ./configure --prefix=$SDL2DIR
-    - make
-    - make install
+    #- wget https://www.libsdl.org/release/SDL2-2.0.4.tar.gz
+    #- tar xzf SDL2-2.0.4.tar.gz
+    #- cd SDL2-2.0.4
+    #- ./configure --prefix=$SDL2DIR
+    #- make
+    #- make install
 script:
     - uname -a
